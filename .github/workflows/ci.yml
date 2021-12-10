@@ -35,7 +35,7 @@ jobs:
       run: |
          pwd
          ls
-         ls ./build/
+         ls ./build/libs/
     
     - name: Build and PUSH docker image
       uses: mr-smithers-excellent/docker-build-push@v5

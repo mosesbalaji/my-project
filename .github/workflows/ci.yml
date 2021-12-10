@@ -31,6 +31,9 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     
+    - name: List jar file
+      run: ls-lrth | grep *.jar
+    
     - name: Build and PUSH docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
